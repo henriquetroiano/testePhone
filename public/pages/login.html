@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webjump - Desafio Frontend</title>
+  <link rel="stylesheet" href="/public/styles.css">
+
+  <div class="header">
+    <div class='content-header'>
+      <p><a href="pages/login.html">Acesse sua Conta</a></p>
+      <p>ou</p>
+      <p><a href="pages/register.html">Cadastre-se</a></p>
+    </div>
+  </div>
+  <div class="searchLocation">
+    <img class="logo" src="/logowebjump.png" />
+    <div class="searchBox">
+      <input type="textbox">
+      <button type="submit">BUSCAR</button>
+    </div>
+  </div>
+
+
+</head>
+
+<body>
+  <div class='menu'>
+    <nav>
+      <ul>
+        <li>PAGINA INICIAL</li>
+        <li>CAMISETAS</li>
+        <li>CALÇAS</li>
+        <li>SAPATOS</li>
+        <li>CONTATO</li>
+      </ul>
+    </nav>
+  </div>
+  <div class='href-simplified'>
+    <p>
+      <script>document.write(document.location.pathname === '/' ? 'Página Inicial' : document.location.pathname)</script>
+    </p>
+  </div>
+  <div class="grid-container">
+    <div class="grid-blank"></div>
+    <div class="grid-filter">
+      <nav>FILTRE POR</nav>
+      <ul>CATEGORIAS</ul>
+      <li><a href="">Roupas</a></li>
+      <li><a href="">Sapatos</a></li>
+      <li><a href="">Acessórios</a></li>
+      <ul>CORES</ul>
+      <form class='buttons'>
+        <input type="checkbox" id='button1' name='button-1' value='red'>
+        <label for="button1"></label>
+        <input type="checkbox" id='button2' name='button-2' value='orange'>
+        <label for="button2"></label>
+        <input type="checkbox" id='button3' name='button-3' value='blue'>
+        <label for="button3"></label>
+      </form>
+      <ul>TIPO</ul>
+      <li><a href="">Corrida</a></li>
+      <li><a href="">Caminhada</a></li>
+      <li><a href="">Casual</a></li>
+      <li><a href="">Social</a></li>
+
+
+    </div>
+    <div class="grid-result">
+      <div class='localName'>
+        <p>CAMISETAS</p>
+      </div>
+    </div>
+    <div class="grid-blank"></div>
+  </div>
+
+</body>
+
+</html>

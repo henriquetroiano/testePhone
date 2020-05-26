@@ -1,0 +1,25 @@
+{
+  "name": "assessment-frontend",
+  "version": "1.0.0",
+  "description": "Criamos este teste para avaliar seus conhecimentos e habilidades frontend (HTML, CSS e JavaScript).",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "connect": "~3.6.6",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "node-html-to-image": "^2.1.1",
+    "nodemon": "^2.0.4",
+    "serve-static": "~1.13.2"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/webjump/assessment-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/webjump/assessment-frontend#readme"
+}

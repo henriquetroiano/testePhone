@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webjump - Desafio Frontend</title>
+  <link rel="stylesheet" href="/public/styles.css">
+  <link rel="stylesheet" href="/public/styles/produtos.css">
+
+  <style>
+    .camisetas {
+      display: unset;
+    }
+
+    .calcas {
+      display: unset;
+    }
+
+    .sapatos {
+      display: unset;
+    }
+  </style>
+
+  <script src="/public/scripts/mainpage.js"></script>
+  <div class="header">
+    <div class='content-header'>
+      <p><a href="pages/login.html">Acesse sua Conta</a></p>
+      <p>ou</p>
+      <p><a href="pages/register.html">Cadastre-se</a></p>
+    </div>
+  </div>
+  <div class="searchLocation">
+    <img class="logo" src="/public/logowebjump.png" />
+    <div class="searchBox">
+      <input type="textbox">
+      <button id="busca" type="submit">BUSCAR</button>
+    </div>
+  </div>
+
+
+</head>
+
+<body>
+  <div class='menu'>
+    <nav>
+      <ul>
+        <li>PAGINA INICIAL</li>
+        <li>CAMISETAS</li>
+        <li>CALÇAS</li>
+        <li>SAPATOS</li>
+        <li>CONTATO</li>
+      </ul>
+    </nav>
+  </div>
+  <div class='href-simplified'>
+    <p>
+      <script>document.write(document.location.pathname === '/public/' ? 'Página Inicial' : document.location.pathname) // operador ternério simples </script>
+    </p>
+  </div>
+  <div class="grid-container">
+    <div class="grid-blank"></div>
+    <div class="grid-filter">
+      <nav>FILTRE POR
+        <ul class="categorias">CATEGORIAS
+          <li><a href="">Roupas</a></li>
+          <li><a href="">Sapatos</a></li>
+          <li><a href="">Acessórios</a></li>
+        </ul>
+
+        <ul>CORES</ul>
+        <form class='buttons'>
+          <input type="checkbox" id='button1' name='button-1' value='vermelho'>
+          <label for="button1" value='vermelho'></label>
+          <input type="checkbox" id='button2' name='button-2' value='laranja'>
+          <label for="button2"></label>
+          <input type="checkbox" id='button3' name='button-3' value='azul'>
+          <label for="button3"></label>
+        </form>
+        <ul>TIPO
+          <li><a href="">Corrida</a></li>
+          <li><a href="">Caminhada</a></li>
+          <li><a href="">Casual</a></li>
+          <li><a href="">Social</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="grid-result">
+      <div class='category'>
+        <p>Camisetas</p>
+      </div>
+      <div class="order-by">
+        <img src="/public/assets/grid.png" alt="grid">
+        <img src="/public/assets/list.png" alt="list">
+        <div class="section-order">
+          <p>ORDENAR POR</p>
+          <select class="select" name="filterby" id="optioner">
+            <option id="option1">Preço</option>
+            <label for="option1">?Preço</label>
+            <option id="option2">Tipo</option>
+            <label for="option2">?Tipo</label>
+          </select>
+        </div>
+      </div>
+      <div class="grid-products">
+
+
+      </div>
+      <div class="end-products"></div>
+    </div>
+
+    <div class="grid-blank"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="module" src="/public/index.js"></script>
+
+
+</body>
+
+</html>

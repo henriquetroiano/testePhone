@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  clear: right;
+  font-family: Open-Sans, sans-serif;
+}
+
+.header {
+  border: 1px solid;
+  width: 99vw;
+  height: 1.4rem;
+  background: rgb(39, 37, 37);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.content-header {
+  height: 1.4rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
+  margin-right: 19.6rem;
+}
+
+.header p {
+  color: white;
+  display: flex;
+  margin-left: 0.7rem;
+  font-family: Open-Sans, sans-serif;
+  font-size: 0.8rem;
+}
+
+.header p a {
+  text-decoration: underline;
+  color: white;
+}
+
+.logo {
+  margin-left: 20rem;
+  margin-top: 2rem;
+}
+
+.searchLocation {
+  background: white;
+  height: 6.2rem;
+}
+
+.searchBox {
+  float: right;
+  border: solid 1px rgb(153, 143, 143);
+  margin-right: 19.5rem;
+  margin-top: 2rem;
+  width: 25rem;
+  height: 2.2rem;
+}
+
+.searchBox button {
+  cursor: pointer;
+  border-style: inherit;
+  float: right;
+  background-color: rgb(216, 27, 27);
+  color: white;
+  height: 2.2rem;
+  width: 6rem;
+  border: none;
+  font-family: Open-Sans, sans-serif;
+  font-weight: 800;
+}
+
+.searchBox input {
+  border: none;
+  height: 2.05rem;
+  width: 19rem;
+}
+
+.menu {
+  border: 1px solid red;
+  background-color: rgb(216, 27, 27);
+  height: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  width: 95vw;
+  height: 3rem;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  margin-left: 16rem;
+
+  padding-left: 0;
+  font-family: Open-Sans, sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.menu ul li {
+  margin-left: 4rem;
+  cursor: pointer;
+}
+
+.href-simplified {
+  height: 3rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.href-simplified p {
+  margin-left: 20rem;
+  font-size: 0.7rem;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 1rem;
+  grid-template-columns: 1.5fr 1fr 4fr 1.5fr;
+  background-color: white;
+  height: auto;
+}
+/* 
+.grid-container div {
+  border: 1px solid red;
+} */
+
+.grid-filter {
+  border: 1px solid rgba(128, 128, 128, 0.247);
+  height: max-content;
+  display: block;
+}
+
+.grid-filter nav {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  color: rgb(216, 27, 27);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.grid-filter ul {
+  color: rgb(103, 173, 173);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1.3rem;
+  padding-left: 0px;
+}
+
+.grid-filter li {
+  margin-left: 1rem;
+  cursor: pointer;
+  position: relative;
+  color: grey;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.grid-filter a {
+  margin-left: -0.5rem;
+  text-decoration: none;
+  text-emphasis: none;
+  color: grey;
+  font-weight: 100;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  margin-left: 0rem;
+}
+
+.buttons input[type="checkbox"] + label {
+  margin-left: 0px;
+}
+
+input[id="button1"] + label {
+  display: block;
+  margin: 0.1rem;
+}
+
+input[id="button1"] {
+  display: none;
+}
+
+input[id="button1"] + label::before {
+  content: "";
+  border: 1px solid rgb(216, 27, 27);
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  padding-left: 0.2rem;
+  padding-bottom: 0.3rem;
+  margin-right: 0.2rem;
+  background-color: rgb(216, 27, 27);
+  transition: ease-in 0.3s;
+}
+
+input[id="button1"]:checked + label::before {
+  background-color: rgb(216, 27, 27);
+  border: 5px solid wheat;
+  width: 35px;
+  height: 15px;
+}
+
+input[id="button2"] + label {
+  display: block;
+  margin: 0.1rem;
+}
+
+input[id="button2"] {
+  display: none;
+}
+
+input[id="button2"] + label::before {
+  content: "";
+  border: 1px solid orangered;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  padding-left: 0.2rem;
+  padding-bottom: 0.3rem;
+  margin-right: 0.2rem;
+  background-color: orangered;
+  transition: ease-in 0.3s;
+}
+
+input[id="button2"]:checked + label::before {
+  background-color: orangered;
+  border: 5px solid wheat;
+  width: 35px;
+  height: 15px;
+}
+
+input[id="button3"] + label {
+  display: block;
+  margin: 0.1rem;
+}
+
+input[id="button3"] {
+  display: none;
+}
+
+input[id="button3"] + label::before {
+  content: "";
+  border: 1px solid rgb(28, 145, 145);
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  padding-left: 0.2rem;
+  padding-bottom: 0.3rem;
+  margin-right: 0.2rem;
+  background-color: rgb(28, 145, 145);
+  transition: ease-in 0.3s;
+}
+
+input[id="button3"]:checked + label::before {
+  background-color: rgb(28, 145, 145);
+  border: 5px solid wheat;
+  width: 35px;
+  height: 15px;
+}
+
+/* .grid-result {
+  border: 1px solid black;
+} */
+
+.category {
+  display: grid;
+}
+
+.category p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  color: rgb(216, 27, 27);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+}
+
+.order-by {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+  margin-bottom: 1rem;
+}
+
+.order-by p {
+  margin-right: 5px;
+  font-weight: 600;
+  font-size: 10px;
+  color: grey;
+}
+
+.section-order {
+  width: 45rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 35px;
+  justify-content: flex-end;
+}
+
+.select {
+  width: 160px;
+  height: 25px;
+  color: grey;
+  border-radius: 3px;
+}
+
+.order-by img[alt="grid"] {
+  width: 13px;
+  height: 13px;
+}
+
+.order-by img[alt="list"] {
+  width: 13px;
+  height: 16px;
+  margin-left: 5px;
+}
