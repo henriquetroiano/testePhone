@@ -4,7 +4,7 @@
   "description": "Criamos este teste para avaliar seus conhecimentos e habilidades frontend (HTML, CSS e JavaScript).",
   "main": "app.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "connect": "~3.6.6",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
