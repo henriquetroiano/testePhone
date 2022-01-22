@@ -7,7 +7,7 @@
     "axios": "^0.19.2",
     "connect": "~3.6.6",
     "express": "^4.17.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "node-html-to-image": "^2.1.1",
     "nodemon": "^2.0.4",
     "serve-static": "~1.13.2"
