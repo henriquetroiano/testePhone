@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "connect": "~3.6.6",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "node-fetch": "^2.6.0",
     "node-html-to-image": "^2.1.1",
     "nodemon": "^2.0.4",
